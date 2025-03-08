@@ -13,22 +13,23 @@
     <link rel="icon" type="image/png" href="images/paper-crafts.png">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="CraftWorld Logo">
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="contact-btn">
-            <button class="btn"><a href="contact.html" style="text-decoration: none;">Contact Us</a></button>
-        </div>
-    </header>
+  <header>
+    <div class="logo">
+        <img src="images/logo.png" alt="CraftWorld Logo">
+    </div>
+    <button class="menu-toggle">☰</button>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-btn">
+        <button class="btn"><a href="contact.html">Contact Us</a></button>
+    </div>
+</header>
     <section id="banner1">
         <!-- Add a banner image -->
     
@@ -83,4 +84,14 @@
         </center>
     </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navbar = document.querySelector(".navbar");
+
+      menuToggle.addEventListener("click", function() {
+          navbar.classList.toggle("active");
+      });
+  });
+</script>
 </html>
